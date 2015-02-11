@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false
+    },
+    "filesGlob": [
+        "./**/*.ts",
+        "!node_modules/**/*.ts"
+    ],
+    "files": [
+        "./config.ts",
+        "./js/app.ts",
+        "./js/models/todo.ts",
+        "./js/typings/knockout/knockout.d.ts",
+        "./js/typings/tsd.d.ts",
+        "./node_modules/gulp-typescript/node_modules/typescript/bin/lib.core.d.ts",
+        "./node_modules/gulp-typescript/node_modules/typescript/bin/lib.core.es6.d.ts",
+        "./node_modules/gulp-typescript/node_modules/typescript/bin/lib.d.ts",
+        "./node_modules/gulp-typescript/node_modules/typescript/bin/lib.dom.d.ts",
+        "./node_modules/gulp-typescript/node_modules/typescript/bin/lib.es6.d.ts",
+        "./node_modules/gulp-typescript/node_modules/typescript/bin/lib.scriptHost.d.ts",
+        "./node_modules/gulp-typescript/node_modules/typescript/bin/lib.webworker.d.ts",
+        "./node_modules/gulp-typescript/node_modules/typescript/bin/typescript.d.ts",
+        "./node_modules/gulp-typescript/node_modules/typescript/bin/typescriptServices.d.ts",
+        "./node_modules/gulp-typescript/node_modules/typescript/bin/typescriptServices_internal.d.ts",
+        "./node_modules/gulp-typescript/node_modules/typescript/bin/typescript_internal.d.ts"
+    ]
+}

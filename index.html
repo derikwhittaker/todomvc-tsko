@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" data-framework="knockoutjs">
+	<head>
+		<meta charset="utf-8">
+		<title>Knockout.js • TodoMVC</title>
+		<link rel="stylesheet" href="bower_components/todomvc-common/base.css">
+		<script src="bower_components/todomvc-common/base.js"></script>
+		<script src="bower_components/underscore/underscore.js"></script>
+		<script src="bower_components/knockout/dist/knockout.debug.js"></script>
+	</head>
+	<body>
+		<section id="todoapp">
+			<header id="header">
+				<h1>todos</h1>
+				<input id="new-todo" data-bind="textInput: current().title, enterKey: addToDo" placeholder="What needs to be done?" autofocus>
+			</header>
+			<section id="main" data-bind="visible: toDos().length">
+							<input id="toggle-all" data-bind="checked: markAllAsCompleted" type="checkbox">
+							<label for="toggle-all">Mark all as complete</label>
+							<ul id="todo-list" data-bind="foreach: filteredToDos">
+								<!-- , editing: editing -->
+								<li data-bind="css: { completed: completed }" class="">
+									<div class="view">
+										<input class="toggle" data-bind="checked: completed" type="checkbox">
+										<label data-bind="text: title, event: { dblclick: $root.editItem }">Buy milk</label>
+										<button class="destroy" data-bind="click: $root.removeItem"></button>
+									</div>
+									<!-- <input class="edit" data-bind="value: title, valueUpdate: 'afterkeydown', enterKey: $root.saveEditing, escapeKey: $root.cancelEditing, selectAndFocus: editing, event: { blur: $root.stopEditing }"> -->
+								</li>
+							</ul>
+						</section>
+		</section>
+
+		<footer id="info">
+			<p>Double-click to edit a todo</p>
+			<p>Written by <a href="https://github.com/ashish01/knockoutjs-todos">Ashish Sharma</a> and <a href="http://knockmeout.net">Ryan Niemeyer</a></p>
+			<p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+		</footer>
+
+		<script src="js/extensions/ko.js"></script>
+		<script src="js/models/enums.js"></script>
+		<script src="js/models/todo.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>

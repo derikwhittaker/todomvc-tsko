@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false
+    },
+    "filesGlob": [
+        "./**/*.ts",
+        "!node_modules/**/*.ts"
+    ],
+    "files": [
+        "./app.d.ts",
+        "./app.ts",
+        "./models/enums.ts",
+        "./models/todo.ts",
+        "./typings/jquery/jquery.d.ts",
+        "./typings/knockout/knockout.d.ts",
+        "./typings/requirejs/require.d.ts",
+        "./typings/tsd.d.ts",
+        "./typings/underscore/underscore.d.ts"
+    ]
+}
